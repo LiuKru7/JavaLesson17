@@ -1,5 +1,8 @@
 package clothing_store;
 
+import lombok.Data;
+import lombok.Getter;
+@Data
 public class ClothingItem {
     private int type;
     private int quantity;
@@ -13,9 +16,6 @@ public class ClothingItem {
         setFullPrice(price, quantity);
     }
 
-    public int getType() {
-        return type;
-    }
 
     public void setType(int type) {
         if (type < 1 || type > 3) {
@@ -44,10 +44,6 @@ public class ClothingItem {
 
     public void setFullPrice(double price, int quantity) {
         this.fullPrice = price * quantity;
-    }
-
-    public double getFullPrice() {
-        return fullPrice;
     }
 
     private String typeToString(int type) {
