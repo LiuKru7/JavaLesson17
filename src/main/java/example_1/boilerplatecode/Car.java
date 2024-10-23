@@ -5,8 +5,8 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-public class Car {
 
+public class Car {
     private String brand;
     private String country;
     private int price;
@@ -14,6 +14,5 @@ public class Car {
     private String firstOwner;
     private String[] additionalParts;
     private int vinCode;
-
 }
 
